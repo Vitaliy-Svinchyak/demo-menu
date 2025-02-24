@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/demo-menu/static/css/main.e6c13ad2.css",
+    "main.js": "/demo-menu/static/js/main.674fc5cb.js",
+    "static/js/453.ac27904e.chunk.js": "/demo-menu/static/js/453.ac27904e.chunk.js",
+    "static/media/pizza.jpg": "/demo-menu/static/media/pizza.3d6b21d6d1165a206d3a.jpg",
+    "static/media/cheesburger.webp": "/demo-menu/static/media/cheesburger.5b146c556847b891cb89.webp",
+    "index.html": "/demo-menu/index.html",
+    "main.e6c13ad2.css.map": "/demo-menu/static/css/main.e6c13ad2.css.map",
+    "main.674fc5cb.js.map": "/demo-menu/static/js/main.674fc5cb.js.map",
+    "453.ac27904e.chunk.js.map": "/demo-menu/static/js/453.ac27904e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.674fc5cb.js"
+  ]
+}
