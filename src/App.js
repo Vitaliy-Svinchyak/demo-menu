@@ -3,10 +3,12 @@ import {Container, Typography, Grid} from "@mui/material"
 import {RestaurantMenu} from "./components/RestaurantMenu"
 import {Navbar} from "./components/Navbar"
 import {Footer} from "./components/Footer"
-import {viewport} from '@telegram-apps/sdk'
+import {backButton, init, viewport} from '@telegram-apps/sdk'
 
 export default function App() {
   useEffect(() => {
+    init()
+    backButton.mount()
     if (viewport.mount.isAvailable()) {
       viewport.mount()
     }
