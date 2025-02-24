@@ -7,6 +7,9 @@ import {viewport} from '@telegram-apps/sdk'
 
 export default function App() {
   useEffect(() => {
+    if (viewport.mount.isAvailable()) {
+      viewport.mount()
+    }
     if (viewport.requestFullscreen.isAvailable()) {
       viewport.requestFullscreen()
     }
