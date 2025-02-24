@@ -1,10 +1,18 @@
-import React from "react"
+import React, {useEffect} from "react"
 import {Container, Typography, Grid} from "@mui/material"
 import {RestaurantMenu} from "./components/RestaurantMenu"
 import {Navbar} from "./components/Navbar"
 import {Footer} from "./components/Footer"
 
 export default function App() {
+  useEffect(() => {
+    if (window.Telegram) {
+      window.Telegram.WebApp.expand()
+      window.Telegram.WebApp.ready()
+      window.Telegram.WebApp.themeParams = {}
+    }
+  }, [])
+
   return (
     <>
       <Navbar/>
