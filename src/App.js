@@ -7,13 +7,17 @@ import {backButton, init, viewport} from '@telegram-apps/sdk'
 
 export default function App() {
   useEffect(() => {
-    init()
-    backButton.mount()
-    if (viewport.mount.isAvailable()) {
-      viewport.mount()
-    }
-    if (viewport.requestFullscreen.isAvailable()) {
-      viewport.requestFullscreen()
+    try {
+      init()
+      backButton.mount()
+      if (viewport.mount.isAvailable()) {
+        viewport.mount()
+      }
+      if (viewport.requestFullscreen.isAvailable()) {
+        viewport.requestFullscreen()
+      }
+    } catch (e) {
+      console.error(e)
     }
   }, [])
 
